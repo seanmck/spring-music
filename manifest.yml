@@ -2,5 +2,4 @@
 applications:
 - name: spring-music2
   memory: 1G
-  random-route: true
   path: build/libs/spring-music.jar
