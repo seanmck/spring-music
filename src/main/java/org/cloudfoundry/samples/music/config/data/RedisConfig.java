@@ -12,7 +12,7 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
-@Profile("redis")
+@Profile({ "redis", "azureredis" })
 public class RedisConfig {
 
     @Bean
