@@ -8,6 +8,7 @@ buildscript {
         jcenter()
         mavenCentral()
         maven { url "https://repo.spring.io/plugins-release" }
+        mavenLocal()
     }
 
     dependencies {
@@ -19,6 +20,7 @@ apply plugin: 'java'
 
 apply plugin: 'eclipse-wtp'
 apply plugin: 'idea'
+apply plugin: 'eclipse'
 
 apply plugin: 'spring-boot'
 
@@ -31,6 +33,7 @@ repositories {
     mavenCentral()
     maven { url "http://repo.spring.io/milestone" }
     maven { url "http://repo.spring.io/snapshot" }
+    mavenLocal()
 }
 
 dependencies {
@@ -51,6 +54,7 @@ dependencies {
     runtime "com.h2database:h2"
     runtime "mysql:mysql-connector-java"
     runtime "postgresql:postgresql:9.1-901-1.jdbc4"
+    compile "com.microsoft.sqlserver:sqljdbc6:6.0"
 
     // Redis Persistence
     compile "redis.clients:jedis"
