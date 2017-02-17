@@ -1,4 +1,2 @@
-URL=$1
-URL=${URL%$'\r'}
-
+printf $1
 curl --fail --location $1
