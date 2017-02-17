@@ -1,5 +1,6 @@
 ---
 applications:
-- name: spring-music2
+- name: spring-music
+  buildpack: java_buildpack_offline
   memory: 1G
   path: build/libs/spring-music.jar
