@@ -4,3 +4,5 @@ applications:
   buildpack: java_buildpack_offline
   memory: 1G
   path: build/libs/spring-music.jar
+  services:
+  - springmusicredisdemo
