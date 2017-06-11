@@ -1,0 +1,13 @@
+{
+  "resourceGroup": "Cloud_Practice_Lab_West", 
+  "cacheName": "demo-redis-cache", 
+  "parameters": {
+    "location": "westus",
+    "enableNonSslPort": true,
+    "sku": {      
+      "name": "Basic",
+      "family": "C",
+      "capacity": 0 
+    }
+  }
+}
